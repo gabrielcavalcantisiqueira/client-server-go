@@ -5,8 +5,6 @@ Este projeto consiste em dois sistemas em Go que se comunicam via HTTP para cons
 - `server.go`: servidor HTTP que consulta uma API externa, persiste a cotação no SQLite e retorna o valor ao cliente.
 - `client.go`: cliente HTTP que solicita a cotação ao servidor, recebe o valor e salva em arquivo `cotacao.txt`.
 
----
-
 ## Funcionalidades
 
 - O servidor consome a API pública de câmbio:  
@@ -42,7 +40,7 @@ docker-compose up -d --build
 ### Client
 
 ```
-go run ./client/.
+go run .\client\main.go
 ```
 
 
